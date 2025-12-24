@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jiaxin Li | Academic Profile</title>
+    <style>
+        /* --- 基础设置 --- */
+        body {
+            font-family: 'Verdana', sans-serif;
+            /* 经典的学术字体 */
+            background-color: #ffffff;
+            color: #222;
+            line-height: 1.5;
+            margin: 0;
+            padding: 40px 20px;
+        }
+
+        /* --- 容器 --- */
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        a {
+            color: #0066cc;
+            /* 学术蓝 */
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* --- 头部简介 (Bio) --- */
+        header {
+            display: flex;
+            gap: 40px;
+            margin-bottom: 60px;
+            align-items: flex-start;
+        }
+
+        .profile-photo {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 50%;
+            /* 圆形头像，如需方形去掉此行 */
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            flex-shrink: 0;
+        }
+
+        .bio-text h1 {
+            font-size: 28px;
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+
+        .bio-text p {
+            font-size: 15px;
+            color: #444;
+        }
+
+        .links {
+            margin-top: 15px;
+            font-size: 14px;
+        }
+
+        /* --- 论文列表 (Publications) --- */
+        .section-title {
+            font-size: 22px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+        }
+
+        .paper {
+            display: grid;
+            grid-template-columns: 280px 1fr;
+            /* 增大左侧图片列宽度 */
+            gap: 25px;
+            margin-bottom: 40px;
+        }
+
+        .paper-img-container {
+            width: 100%;
+            height: 180px;
+            /* 增大容器高度 */
+            overflow: hidden;
+            border-radius: 6px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
+            transition: transform 0.2s;
+            background-color: transparent;
+            /* 移除背景色以减少干扰 */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .paper-img-container:hover {
+            transform: scale(1.02);
+            /* 鼠标悬停轻微放大 */
+        }
+
+        .paper-img {
+            width: 100% !important;
+            height: 100% !important;
+            object-fit: contain !important;
+            /* 强制完整显示且不被裁剪 */
+            display: block;
+        }
+
+        .paper-content h3 {
+            margin: 0 0 5px 0;
+            font-size: 17px;
+            font-weight: 600;
+        }
+
+        .paper-content h3 a {
+            color: #111;
+        }
+
+        .authors {
+            font-size: 15px;
+            color: #555;
+            margin-bottom: 5px;
+        }
+
+        .me {
+            font-weight: bold;
+            /* 高亮你的名字 */
+            color: #000;
+        }
+
+        .venue {
+            font-style: italic;
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 8px;
+            display: block;
+        }
+
+        .resources {
+            font-size: 13px;
+        }
+
+        .resources a {
+            margin-right: 10px;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        .description {
+            font-size: 13px;
+            color: #777;
+            margin-top: 8px;
+            line-height: 1.4;
+        }
+
+        .abstract-content {
+            font-size: 13px;
+            color: #444;
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #fdfdfd;
+            border-left: 3px solid #0066cc;
+            line-height: 1.6;
+            display: none;
+            text-align: justify;
+        }
+
+        /* --- 手机端适配 --- */
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+                align-items: center;
+            }
+
+            .bio-text {
+                text-align: left;
+            }
+
+            .paper {
+                grid-template-columns: 1fr;
+            }
+
+            /* 单列堆叠 */
+            .paper-img-container {
+                height: auto;
+                max-width: 100%;
+                aspect-ratio: 16/9;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header>
+            <img src="./images/imgae.jpg" alt="Profile Photo" class="profile-photo">
+
+            <div class="bio-text">
+                <h1>Jiaxin Li「李佳昕」</h1>
+                <p>
+                    I'm a third-year undergraduate student at Huaihua University, majoring in Computer Science.
+                    My research interests include <strong>Natural Language Processing</strong> and <strong>computer
+                        vision</strong>.
+                </p>
+                <p>
+                    I have developed a strong enthusiasm for research and a deep curiosity about how language can be
+                    computationally represented and understood. Through my undergraduate research experience and
+                    publications at EMNLP, CIKM, I have cultivated a passion for Computational Linguistics.
+                    Looking ahead, I am eager to conduct more interdisciplinary research that integrates NLP with
+                    related domains, driven by my genuine enthusiasm and long-standing academic interest in this field.I
+                    love NLP!
+                </p>
+                <div class="links">
+                    <p>Email:<a href="">shelleylimeer1123@gmail.com</a> &nbsp;</p>
+                    <!-- <a href="https://github.com/yourname" target="_blank">Github</a> &nbsp;/&nbsp;
+                    <a href="#" target="_blank">Google Scholar</a> -->
+                </div>
+            </div>
+        </header>
+
+        <section>
+            <h2 class="section-title">Publications</h2>
+
+            <div class="paper">
+                <div class="paper-img-container">
+                    <img src="./images/Projects1.png" alt="SparseSplat" class="paper-img">
+                </div>
+                <div class="paper-content">
+                    <h3><a href="#">Multilingual Federated Low-Rank Adaptation for Collaborative Content Anomaly
+                            Detection across Multilingual Social Media Participants</a></h3>
+                    <div class="authors">
+                        <span class="me">Jiaxin Li</span>, Geng Zhao, Xiaoci Zhang
+                    </div>
+                    <span class="venue">Accepted by EMNLP 2025 (Long Paper, Main Conference). </span>
+                    <div class="resources">
+                        <a href="https://aclanthology.org/2025.emnlp-main.770/">webpage</a>
+                        <a href="https://aclanthology.org/2025.emnlp-main.770.pdf">pdf</a>
+                        <a href="javascript:void(0)" class="abstract-toggle">abstract</a>
+                        <a href="https://aclanthology.org/2025.emnlp-main.770.bib">BibTeX</a>
+                    </div>
+
+                    <div class="abstract-content">
+                        Recently, the rapid development of multilingual social media platforms (SNS) exacerbates new
+                        challenges in SNS content anomaly detection due to data islands and linguistic imbalance. While
+                        federated learning (FL) and parameter-efficient fine-tuning (PEFT) offer potential solutions in
+                        most cases, when every client is multilingual, existing solutions struggle with multilingual
+                        heterogeneity: 1) entangled language-specific knowledge during aggregation, 2) noise from
+                        minority languages, and 3) unstable cross-platform collaboration. Based on the asymmetric nature
+                        of LoRA, we propose MuLA-F, a multilingual Federated LoRA introducing SVD-based
+                        language-specific disentanglement of LoRA blocks and a local orthogonal tuning strategy.
+                        Evaluations across three SNS content anomaly detection tasks demonstrate MuLA-F’s superiority in
+                        multilingual performance while reducing multilingual knowledge conflicts and communication
+                        rounds.
+                    </div>
+
+                    <div class="description">
+                        Disentangling learned domain knowledge into language-specific representations
+                        after LoRA-PEFT of LLMs on multilingual Web/SNS content, enabling cross-cultural equitable
+                        utilization of Web/SNS data resources.
+                    </div>
+                </div>
+            </div>
+
+            <div class="paper">
+                <div class="paper-img-container">
+                    <img src="./images/Projects2.png" alt="VINGS-Mono" class="paper-img">
+                </div>
+                <div class="paper-content">
+                    <h3><a href="#">Improving Content Anomaly Detection on Social Media via Counterfactual Mitigation of
+                            Social Event-Induced Bias</a></h3>
+                    <div class="authors">
+                        <span class="me">Jiaxin Li</span>, Geng Zhao
+                    </div>
+                    <span class="venue">Accepted by CIKM 2025 (Short Paper, Main Conference). </span>
+                    <div class="resources">
+                        <a href="https://dl.acm.org/doi/10.1145/3746252.3760800">webpage</a>
+                        <a href="https://dl.acm.org/doi/epdf/10.1145/3746252.3760800">pdf</a>
+                        <a href="javascript:void(0)" class="abstract-toggle">abstract</a>
+                        <!-- <a href="https://doi.org/10.1145/3746252.3760800.bib">BibTeX</a> -->
+                    </div>
+                    <div class="abstract-content">
+                        Content anomaly detection on social media (SNS) plays a critical role in maintaining healthy
+                        online communities. However, the prevalence of major real-world social events can introduce
+                        model bias that skews, narrows, and undermines a detector's ability to perceive anomaly in
+                        content by contaminating and homogenizing the expressions posted during these events. To address
+                        this challenge, we propose SeiNS, a novel, model-agnostic plugin designed to mitigate the bias
+                        induced by prevalent social events. SeiNS comprises two components: a Social Event Extractor and
+                        an Event Involvement Perceptor. For a given post, SeiNS removes the bias through steps that
+                        include, treating the correlation between the label and the social event-induced homogenized
+                        content, as well as the correlation between the label and the event-involvement representation,
+                        as spurious; performing counterfactual learning on them during finetuning. We evaluate SeiNS on
+                        two benchmark datasets composed of real SNS posts under various major social events, where
+                        content anomaly respectively plays a negative and a positive role for social good. The results
+                        show that SeiNS significantly improves the robustness of SNS content anomaly detectors in
+                        dynamic-even unstable-online social environments.
+                    </div>
+                    <div class="description">
+                        Identifying bias in fine-tuned PLMs/LLMs caused by prevalence of major social
+                        events in Web/SNS corpora, and proposing a counterfactual learning-based plugin as the solution.
+                    </div>
+                </div>
+
+                <!-- <div class="paper">
+                <div class="paper-img-container">
+                    <img src="https://via.placeholder.com/300x160" alt="FRC Robot" class="paper-img">
+                </div>
+                <div class="paper-content">
+                    <h3><a href="#">FRC Team 6907 Mentorship</a></h3>
+                    <div class="authors">Mentor & Technical Advisor</div>
+                    <span class="venue">2025 FRC China Offseason Finalist</span>
+                    <div class="description">
+                        I have been mentoring the robotics club at my former high school, Team 6907. We design and build
+                        125-pound industrial-grade robots. Thrilled that we won the championship at the 2025 FRC China
+                        Offseason!
+                    </div>
+                </div>
+            </div> -->
+
+        </section>
+    </div>
+
+</body>
+<script>
+    document.querySelectorAll('.abstract-toggle').forEach(button => {
+        button.addEventListener('click', function (e) {
+            e.preventDefault();
+            const paperContent = this.closest('.paper-content');
+            const abstract = paperContent.querySelector('.abstract-content');
+            if (abstract.style.display === 'none' || abstract.style.display === '') {
+                abstract.style.display = 'block';
+            } else {
+                abstract.style.display = 'none';
+            }
+        });
+    });
+</script>
+
+
+
+</html>
