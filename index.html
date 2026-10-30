@@ -230,6 +230,106 @@
             <h2 class="section-title">Publications</h2>
 
             <div class="paper">
+    <div class="paper-img-container">
+        <img
+            src="./images/Projects3.png""
+            alt="SparseSplat"
+            class="paper-img"
+        >
+    </div>
+
+    <div class="paper-content">
+        <h3>
+            <a
+                href="https://aclanthology.org/2026.findings-emnlp.72/"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Looking Closer When Unsure: VIGOR, A Training-Free Framework
+                for Mitigating Object Hallucination in Multimodal Large
+                Language Models
+            </a>
+        </h3>
+
+        <div class="authors">
+            <span class="me">Jiaxin Li</span>,
+            Yixiang Chen,
+            Lefan Lai,
+            Geng Zhao,
+            Xiaohan Long,
+            Xuming Hu
+        </div>
+
+        <span class="venue">
+            Findings of the Association for Computational Linguistics:
+            EMNLP 2026.
+        </span>
+
+        <div class="resources">
+            <a
+                href="https://aclanthology.org/2026.findings-emnlp.72/"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                webpage
+            </a>
+
+            <a
+                href="https://aclanthology.org/2026.findings-emnlp.72.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                pdf
+            </a>
+
+            <a
+                href="javascript:void(0)"
+                class="abstract-toggle"
+            >
+                abstract
+            </a>
+
+            <a
+                href="https://aclanthology.org/2026.findings-emnlp.72.bib"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                BibTeX
+            </a>
+        </div>
+
+        <div class="abstract-content">
+            Object hallucination remains a major challenge in Multimodal
+            Large Language Models (MLLMs), even though they have achieved
+            strong performance across widely vision-language tasks. A key
+            reason for object hallucination is limited fine-grained visual
+            grounding provided by fixed-resolution visual encoding. In this
+            paper, we propose Visual Inference Gating for Object Refinement
+            (VIGOR), a training-free inference-time framework for binary
+            object verification. VIGOR adopts a selective coarse-to-fine
+            pipeline that improve visual grounding without the overhead of
+            always-on multi-view inspection. It first uses the global yes-no
+            margin to estimate whether the available evidence is sufficient.
+            When the evidence is insufficient, VIGOR performs local refinement
+            on uncertain cases using a small set of overlapping crops.
+            Finally, VIGOR combines global and local evidence with an
+            asymmetric decision rule. Experiments on three benchmark datasets
+            across five MLLM backbones show that VIGOR consistently
+            outperforms strong training-free baselines, recovering missed
+            fine-grained evidence while maintaining robust performance on
+            challenging visual reasoning.
+        </div>
+
+        <div class="description">
+            A training-free coarse-to-fine inference framework that
+            selectively activates local crop refinement when global visual
+            evidence is uncertain, mitigating object hallucination in MLLMs
+            without retraining.
+        </div>
+    </div>
+</div>
+            
+            <div class="paper">
                 <div class="paper-img-container">
                     <img src="./images/Projects1.png" alt="SparseSplat" class="paper-img">
                 </div>
